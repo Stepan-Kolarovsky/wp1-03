@@ -8,7 +8,7 @@
     $product = $a * $b ;
    if ($b != 0) {
        $portion = $a / $b ;
-   } else ( $portion = "nelze dělit nulou" )
+   } else { $portion = "nelze dělit nulou" ; }
     
 ?> 
 <head>
