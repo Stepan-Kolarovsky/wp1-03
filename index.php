@@ -3,6 +3,15 @@
 <?php
    $a=10;
    $b=5;
+   $summary = $a + $b ; 
+   $difference = $a - $b ;
+    $product = $a * $b ;
+   if ($b != 0) {
+       $portion = $a / $b ;
+   } else {
+       $portion = "nelze dělit nulou"
+   }
+   
 ?> 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +21,9 @@
 <body>
  <p>a = <?= $a ?> </p>
  <p>b = <?= $b ?> </p>
- <p>Součet: <?= $a ?> + <?= $b ?> = <?= $a + $b ?> </p>
- <p>Rozdíl: <?= $a ?> - <?= $b ?> = <?= $a - $b ?> </p>
- <p>Součin: <?= $a ?> × <?= $b ?> = <?= $a * $b ?> </p>
- <p>Podíl: <?= $a ?> ÷ <?= $b ?> = <?= $a / $b ?> </p>
+ <p>Součet: <?= $a ?> + <?= $b ?> = <?= $summary ?> </p>
+ <p>Rozdíl: <?= $a ?> - <?= $b ?> = <?= $difference ?> </p>
+ <p>Součin: <?= $a ?> × <?= $b ?> = <?= $product ?> </p>
+ <p>Podíl: <?= $a ?> ÷ <?= $b ?> = <?= $portion ?> </p>
 </body>
 </html>
